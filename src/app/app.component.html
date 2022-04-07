@@ -1,0 +1,52 @@
+<div class="main-container">
+  <header class="header header-6">
+    <div class="branding">
+      <a routerLink="/">
+        <cds-icon shape="vm-bug"></cds-icon>
+        <span class="title">Project Clarity</span>
+      </a>
+    </div>
+    <form class="search">
+      <label for="search-input-sidenav-ng">
+        <input id="search-input-sidenav-ng" type="text" placeholder="Search for keywords..." />
+      </label>
+    </form>
+    <div class="settings">
+      <a href="javascript://" class="nav-link nav-icon">
+        <cds-icon shape="cog"></cds-icon>
+      </a>
+    </div>
+  </header>
+  <div class="content-container">
+    <div class="content-area">
+      <router-outlet></router-outlet>
+    </div>
+    <nav class="sidenav">
+      <section class="sidenav-content">
+        <a href="javascript://" class="nav-link active">
+          Nav Element 1
+        </a>
+        <a href="javascript://" class="nav-link ">
+          Nav Element 2
+        </a>
+        <section class="nav-group collapsible">
+          <input id="tabexample1" type="checkbox" />
+          <label for="tabexample1">Clientes</label>
+          <ul class="nav-list">
+            <li><a routerLink="user/listar" class="nav-link">Mostrar clientes</a></li>
+            <li><a routerLink="user/crear" class="nav-link">Crear clientes</a></li>
+          </ul>
+        </section>
+
+        <section class="nav-group collapsible">
+          <input id="tabexample2" type="checkbox" />
+          <label for="tabexample2">Collapsible Nav Element</label>
+          <ul class="nav-list">
+            <li><a class="nav-link">Link 1</a></li>
+            <li><a class="nav-link">Link 2</a></li>
+          </ul>
+        </section>
+      </section>
+    </nav>
+  </div>
+</div>
